@@ -1,0 +1,9 @@
+{
+    "project_name": "PROJECT - preferably the project abreviation",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_description": "Short project description",
+    "author_name": "CALDISS",
+    "author_email": "caldiss@adm.aau.dk",
+    "github_username": "CALDISS-AAU",
+    "package_name": "{{ cookiecutter.project_slug }}"
+}
