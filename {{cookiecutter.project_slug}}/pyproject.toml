@@ -4,3 +4,6 @@ version = "0.1.0"
 
 [project.scripts]
 create-pipeline = "Shared_Functions.pipeline_generator:main"
+
+[tool.setuptools]
+packages = ["Shared_Functions"]

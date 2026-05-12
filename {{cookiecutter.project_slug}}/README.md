@@ -27,3 +27,44 @@ The overall structure of this project can be seen below:
 ├── main.py # Combining all pipelines
 └── test.py # Combining all tests of all pipelines
 ```
+
+## Shared Functions
+
+The `Shared_Functions/` directory contains reusable functionality that
+can be used across multiple pipelines within the project.
+
+### pipeline_generator.py
+
+The `pipeline_generator.py` module provides functionality for generating
+new standardized pipeline folder structures directly from the terminal.
+
+Before using the generator, navigate to the project root directory
+containing the `pyproject.toml` file and install the project in
+editable mode:
+
+```bash
+cd my_project
+pip install -e .
+```
+
+New pipelines can then be created from any folder within the project 
+root using:
+
+```bash
+create-pipeline pipeline_name
+```
+
+Examples:
+
+```bash
+create-pipeline data cleaning
+```
+
+```bash
+create-pipeline MY very_oWn Test_Pipeline
+```
+
+Pipeline names may contain spaces, underscores, mixed casing, and
+numbers. Only alphanumeric characters will be included in the final
+pipeline name. Spaces and special characters are treated as word
+separators and converted to underscores.
